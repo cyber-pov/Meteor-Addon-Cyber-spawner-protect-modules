@@ -43,27 +43,15 @@ Default deposit blacklist: Ender Pearl, End Crystal, Obsidian, Respawn Anchor, G
 
 ## vs Glazed SpawnerProtect
 
-```
-┌──────────────────────┬─────────────────────────────────┬────────────────────────────────────────────┐
-│ Feature              │ Glazed SpawnerProtect            │ SpawnerProtect+                            │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ Detection            │ Tick polling                     │ EntityAddedEvent (instant) + 20t scan      │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ Staff skip           │ AdminList module                 │ Nametag alphabet prefix check              │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ Rollback detection   │ No                               │ Yes — waits N ticks before confirming      │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ Emergency disconnect │ Distance-based (emergencyDist.)  │ No                                         │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ Auto movement        │ Walks to chest                   │ No — assumes you're already near one       │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ Player count cap     │ Disables if 3+ players nearby    │ No                                         │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ World change         │ Pauses on spawn TP               │ No                                         │
-├──────────────────────┼─────────────────────────────────┼────────────────────────────────────────────┤
-│ Discord webhook      │ Yes (with embeds)                │ No                                         │
-└──────────────────────┴─────────────────────────────────┴────────────────────────────────────────────┘
-```
+| Feature | Glazed SpawnerProtect | SpawnerProtect+ |
+|---|---|---|
+| Detection | Tick polling | EntityAddedEvent (instant) + 20t scan |
+| Staff skip | AdminList module | Nametag alphabet prefix check |
+| Rollback detection | No | Yes — waits N ticks before confirming |
+| Emergency disconnect | Distance-based | No |
+| Auto movement | Walks to chest | No — assumes you're already near one |
+| Player count cap | Disables if 3+ players nearby | No |
+| Discord webhook | Yes (with embeds) | No |
 
 ---
 
