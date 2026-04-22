@@ -14,13 +14,13 @@ A periodic scan runs every 20 ticks as a fallback in case you had the module on 
 
 ---
 
-## スタッフ検知 (Ignore Alphabet Prefix)
+## Staff detection (Ignore Alphabet Prefix)
 
-大規模サーバーでは、モデレーターがスペクターからサバイバルに切り替えて意図的にSpawnerProtect+を発動させようとしてくることがある。この設定はその対策。
+On large servers, moderators sometimes switch to survival mode near your base to bait a reaction. This setting handles that.
 
-プレイヤーのエンティティが出現したとき、ネームタグのプレフィックス（ユーザー名より前の部分）を確認する。そこにアルファベット（A〜Z）が含まれていれば保護を発動しない。`SRMOD`・`SRHELPER`・`DEV`・`OWNER` などのスタッフロールはすべてテキストのプレフィックスを持っている一方、通常のドナーランクは `+` や絵文字だけでアルファベットを含まない。
+When a player entity appears, the mod reads the prefix from their nametag — the part before their username. If that prefix contains any letter (A–Z), protection is skipped. Staff roles like `SRMOD`, `SRHELPER`, `DEV`, `OWNER` all have text prefixes, while regular donor ranks use `+` or emoji, which contain no letters.
 
-**Ignore Alphabet Prefix** をオンにしておけば、スタッフが来ても名前をログに残すだけでスルーする。
+Enable **Ignore Alphabet Prefix** and it silently logs the name and moves on.
 
 ---
 
